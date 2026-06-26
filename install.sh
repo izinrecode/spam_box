@@ -7,7 +7,7 @@ fi
 echo "Installing..."
 sudo apt-get update
 sudo apt-get install python3 python3-pip git uvicorn -y
-sudo git clone https://github.com/ScRiPt1337/spam_box /opt/hacksec_tempmail
+sudo git clone https://github.com/izinrecode/spam_box/ /opt/hacksec_tempmail
 pip install -r /opt/hacksec_tempmail/requirements.txt
 cp /opt/hacksec_tempmail/hacksec_tempmail/service/* /etc/systemd/system/
 sudo systemctl enable hacksec_server.service
